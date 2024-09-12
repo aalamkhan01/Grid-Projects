@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+
+.container {
+     margin: 20px;
+     background-color: rgb(212, 200, 223);
+     gap: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-auto-rows: 120px;
+    /*
+    place-content: center; /* Center the entire grid inside the container 
+    width: 100%;  Full width to ensure centering 
+    height: 100vh; /* Full height of the viewport 
+    */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+}
+
+.box {
+    
+    border: 1px solid gold;
+}
+
+.box1 {
+    background-color: lightblue;
+    grid-row: span 2;
+}
+
+.box2 {
+    background-color: black;
+    grid-column: span 2;
+}
+
+.box3 {
+    background-color: blue;
+}
+
+.box4 {
+    background-color: rgb(153, 12, 12);
+    grid-row: span 2;
+}
+
+.box5 {
+    background-color: rgb(248, 176, 41);
+    grid-column: span 2;
+}
